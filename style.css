@@ -44,7 +44,7 @@ html {
 	display: flex;
 	width: 80%;
 	max-height: 350px;
-	aspect-ratio: 1/4;
+	aspect-ratio: 4/1;
 	margin: 10%;
 	margin-top: 35px;
 	border-radius: 10px;
@@ -159,7 +159,7 @@ html {
 	width: 80%;
 	margin: auto;
 	display: flex;
-	height: 35vh;
+	height: 50vh;
 	flex-direction: column;
 }
 .projects-header {
@@ -172,7 +172,11 @@ html {
 .projects-holder {
 	flex: 1;
 	display: flex;
-	gap: 10px
+	gap: 10px;
+	isplay: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+	padding-bottom: 5px
 }
 
 .project1 {
@@ -183,7 +187,7 @@ html {
 	height: 100%;
 	max-width: 20%;
 	border: #502020 solid 2px;
-	max-height: 100%
+	max-height: 99%
 }
 .project1-thumbnail {
 	width: 100%;
@@ -229,7 +233,7 @@ html {
 	height: 100%;
 	max-width: 20%;
 	border: #502020 solid 2px;
-	max-height: 100%
+	max-height: 99%
 }
 .project2-thumbnail {
 	width: 100%;
@@ -275,7 +279,7 @@ html {
 	height: 100%;
 	max-width: 20%;
 	border: #502020 solid 2px;
-	max-height: 100%
+	max-height: 99%
 }
 .project3-thumbnail {
 	width: 100%;
@@ -321,7 +325,7 @@ html {
 	height: 100%;
 	max-width: 20%;
 	border: #502020 solid 2px;
-	max-height: 100%
+	max-height: 99%
 }
 .project4-thumbnail {
 	width: 100%;
@@ -360,7 +364,6 @@ html {
 }
 
 .socials {
-	margin-top: 3vw;
 	background: #080000;
 	display: flex;
 	flex-direction: column;
@@ -417,7 +420,7 @@ html {
 	height: 100%;
 	position: fixed;
 	z-index: 0 !important;
-	overflow: visible;
+	overflow: clip !important;
 }
 .effect-pneumosis {
 	transform: rotate(20deg);
@@ -466,4 +469,167 @@ html {
 	font-size: 16px;
 	color: white;
 	white-space: pre-wrap;
+}
+
+@media (max-width: 600px) {
+	.headergfx {
+		aspect-ratio: 3/1 !important;
+		margin-bottom: 0px;
+	}
+	.hg-bar-text {
+		font-size: 1vw
+	}
+	.nameplate {
+		margin-top: 8%
+	}
+	.nickname {
+		font-size: 4vw
+	}
+	.speciality {
+		font-size: 3vw
+	}
+	.fullname {
+		font-size: 2vw
+	}
+	.nameplate {
+		height: auto
+	}
+	
+	.about {
+		margin-bottom: 0px
+	}
+	.about-header {
+		font-size: 6vw;
+		margin-bottom: 15px
+	}
+	.about-contents {
+		font-size: 4vw
+	}
+	
+	
+	.projects {
+		height: 50vw
+	}
+	.projects-header {
+		font-size: 6vw;
+		margin-bottom: 15px
+	}
+	
+	.project1 {
+		min-width: 40%;
+		max-width: 40%;
+	}
+	.project1-title {
+		font-size: 3.25vw
+	}
+	.project1-description {
+		font-size: 2vw
+	}
+	.project1-platform {
+		height: 3vw
+	}
+	.project1-platform-name {
+		font-size: 3vw
+	}
+	.project1-platform-icon {
+		height: 3vw
+	}
+	
+	.project2 {
+		min-width: 40%;
+		max-width: 40%;
+	}
+	.project2-title {
+		font-size: 3.1vw
+	}
+	.project2-description {
+		font-size: 2vw
+	}
+	.project2-platform {
+		height: 3vw
+	}
+	.project2-platform-name {
+		font-size: 3vw
+	}
+	.project2-platform-icon {
+		height: 3vw
+	}
+	
+	.project3 {
+		min-width: 40%;
+		max-width: 40%;
+	}
+	.project3-title {
+		font-size: 2.8vw
+	}
+	.project3-description {
+		font-size: 2vw
+	}
+	.project3-platform {
+		height: 3vw
+	}
+	.project3-platform-name {
+		font-size: 3vw
+	}
+	.project3-platform-icon {
+		height: 3vw
+	}
+	
+	.project4 {
+		min-width: 40%;
+		max-width: 40%;
+	}
+	.project4-title {
+		font-size: 3.25vw
+	}
+	.project4-description {
+		font-size: 2vw
+	}
+	.project4-platform {
+		height: 3vw
+	}
+	.project4-platform-name {
+		font-size: 3vw
+	}
+	.project4-platform-icon {
+		height: 3vw
+	}
+	
+	.socials {
+		height: 30vw
+	}
+	.socials-title {
+		font-size: 4vw !important;
+		margin-bottom: 10px !important
+	}
+	.socials1 span {
+		font-size: 1.8vh
+	}
+	.socials1 img {
+		width: 1.8vh
+	}
+	.socials2 span {
+		font-size: 1.8vh
+	}
+	.socials2 img {
+		width: 1.8vh
+	}
+	.socials1 {
+		gap: 17px
+	}
+	.socials2 {
+		gap: 17px
+	}
+	
+	.loading-context {
+		font-size: 3vw
+	}
+}
+
+* {
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
 }
