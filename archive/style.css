@@ -1,0 +1,76 @@
+body {
+	background: #000000;
+}
+
+img, span, p {
+	user-select: none;
+	pointer-events: none;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+}
+
+
+.bob-idle {
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.bob-turn { 
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+	object-fit: cover;  
+}
+
+.contents {
+	position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;  
+        object-fit: cover;
+}
+
+.effects {
+	position: fixed;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.05;
+}
+
+
+.intro {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+}
+.intro-contents {
+	color: #ffffff;
+	font-size: 0.7vw;
+	font-family: "DejaVu Sans Mono", monospace
+}
+
+
+
+.phone-warning {display: none; z-index: 99; background: #ffffff; width: 100%; height: 100%; position: absolute; top: 0; left: 0}
+.phone-warning-context {font-size: 3vw; font-family: "DejaVu Sans Mono", monospace}
+@media (max-width: 650px) {
+	.intro-contents {font-size: 3vw}
+	.phone-warning {display: block !important}
+}
