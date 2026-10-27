@@ -7,7 +7,7 @@ const contents = document.querySelector(".contents")
 
 let page = 1
 let previouspage = 1
-let total = 4
+const total = 4
 
 async function input(type) {
 	function wait(s) {
