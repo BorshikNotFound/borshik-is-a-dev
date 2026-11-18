@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "inc";
+    src: url("fonts/inconsolata.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "jet";
+    src: url("fonts/jetbrains-mono.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+body {
+    background: #401212;
+}
+body span {font-family: "inc"; color: #ffdddd}
+body a {color: #ff7777; text-decoration: none}
+
+.container {
+    background: #300e0e;
+    width: 70%;
+    margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+	z-index: 2;
+	margin-left: 15%;
+	position: relative
+}
+.divider {
+    background: #6e2020;
+    height: 4px;
+    width: auto;
+    margin-left: 25px;
+	margin-right: 25px;
+	border-radius: 2px;
+	z-index: 2
+}
+
+.overview {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	z-index: 2;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    margin-bottom: 0;
+    gap: 15px;
+	z-index: 2
+}
+.header-title {
+    color: white;
+    font-weight: 700;
+    font-size: 4vw
+}
+.header-text {
+    font-size: 1.25vw
+}
+
+.content-title {
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 2.5vw;
+	margin-left: 25px;
+	margin-right: 25px
+}
+.content-text {
+	font-size: 1.2vw;
+	margin-left: 25px;
+	margin-right: 25px
+}
+
+.code {
+	margin-left: 25px;
+	margin-right: 25px;
+	background: #110505;
+	border-radius: 5px;
+	border: 1px solid #352525
+	
+}
+.code-text {
+	font-family: "jet";
+	font-size: 0.75vw;
+	color: #ffffff;
+	margin: 5px
+}
+.codekeyword {color: #ff6969; font-weight: 700}
+.codefunc {color: #74a7f2; font-weight: 700}
+.codeusr {color: #e6e08c}
+.codepath {color: #8cdcfa}
+.codevalue {color: #fcba49; font-weight: 700}
+.codestr {color: #63db6f}
+.codecmt {color: #757575}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 2;
+}
+.nav-buttons {
+    height: 30px;
+    display: flex;
+    width: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    gap: 0px
+}
+.nav-buttons button {
+    margin: 0;
+    border: none;
+    border-left: 2px solid #6e2020;
+    border-right: 2px solid #6e2020;
+    background: none;
+    font-family: "inc";
+    font-size: 1vw;
+    color: #ff5555;
+    margin-left: -2px;
+}
+.nav-guides {margin-left: 0 !important}
+.nav-current-button {
+    background: #401818 !important
+}
+.nav-contents {
+    margin-left: 25px;
+    margin-right: 25px;
+    width: auto
+}
+.nav-panel {
+    min-height: 100px;
+    background: #270f0f;
+    padding: 10px;
+    align-items: center;
+    border-top: 2px solid #6e2020
+}
+.nav-panel span {
+    font-size: 2vw;
+    text-align: center
+}
+.nav-guides-panel {grid-template-columns: 1fr}
+.grid-display {display: grid}
+.none-display {display: none}
+
+
+.effect {
+	user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+    position: fixed;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	opacity: 0.08;
+	background: linear-gradient(180deg, #ffaaaaff, #00000000)
+}
