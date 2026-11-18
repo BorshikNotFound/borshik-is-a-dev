@@ -2,5 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://borshik.is-a.dev/</loc>
+        <loc>https://borshik.is-a.dev/archive</loc>
+        <loc>https://borshik.is-a.dev/luaub</loc>
     </url>
 </urlset>
